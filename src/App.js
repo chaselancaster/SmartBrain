@@ -48,6 +48,10 @@ class App extends Component {
     }
   }
 
+  displayFaceBox = (box) => {
+    this.setState({box: box})
+  }
+
   onButtonSubmit = (evnt) => {
     this.setState({imageUrl: this.state.input})
     console.log('click')
