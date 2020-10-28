@@ -38,8 +38,8 @@ class App extends Component {
     this.setState({imageUrl: this.state.input})
     console.log('click')
     app.models.predict(
-      Clarifai.COLOR_MODEL, 
-      "https://samples.clarifai.com/metro-north.jpg", 
+      Clarifai.FACE_DETECT_MODEL, 
+      this.state.input, 
       {language: 'zh'})
       .then(
       function(response) {
