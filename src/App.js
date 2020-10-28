@@ -18,6 +18,11 @@ const particlesOptions = {
   }
 }
 class App extends Component {
+
+  state = {
+    
+  }
+
   render() {
     return (
       <div className="App">
@@ -34,6 +39,7 @@ class App extends Component {
       </div>
     );
   }
+
 }
 
 export default App;
