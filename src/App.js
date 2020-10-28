@@ -40,7 +40,10 @@ class App extends Component {
         <Navigation />
         <Logo />
         <Rank />
-        <ImageLinkForm onInputChange={this.onInputChange} onSubmit={this.onButtonSubmit}/>
+        <ImageLinkForm 
+          onInputChange={this.onInputChange} 
+          onSubmit={this.onButtonSubmit}
+        />
         {/* {
         
         <FaceRecognition />} */}
