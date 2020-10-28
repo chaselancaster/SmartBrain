@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import Clarifai from 'clarifai';
 import Navigation from './Component/Navigation/Navigation';
+import Signin from './Component/Signin/Signin';
 import Logo from './Component/Logo/Logo';
 import ImageLinkForm from './Component/ImageLinkForm/ImageLinkForm';
 import Rank from './Component/Rank/Rank';
@@ -71,6 +72,7 @@ class App extends Component {
           params={particlesOptions}
         />
         <Navigation />
+        <Signin />
         <Logo />
         <Rank />
         <ImageLinkForm 
