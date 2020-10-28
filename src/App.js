@@ -6,6 +6,10 @@ import ImageLinkForm from './Component/ImageLinkForm/ImageLinkForm';
 import Rank from './Component/Rank/Rank';
 import './App.css';
 
+const app = new Clarifai.App({
+  apiKey: 'YOUR_API_KEY'
+ });
+
 const particlesOptions = {
   particles: {
     number: {
@@ -30,13 +34,13 @@ class App extends Component {
   onButtonSubmit = (evnt) => {
     console.log('click')
     app.models.predict(Clarifai.GENERAL_MODEL, "https://samples.clarifai.com/metro-north.jpg", {language: 'zh'}).then(
-  function(response) {
-    // do something with response
-  },
-  function(err) {
-    // there was an error
-  }
-);
+      function(response) {
+        // do something with response
+      },
+      function(err) {
+        // there was an error
+      }
+    );
   }
 
   render() {
