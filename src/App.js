@@ -29,6 +29,14 @@ class App extends Component {
 
   onButtonSubmit = (evnt) => {
     console.log('click')
+    app.models.predict(Clarifai.GENERAL_MODEL, "https://samples.clarifai.com/metro-north.jpg", {language: 'zh'}).then(
+  function(response) {
+    // do something with response
+  },
+  function(err) {
+    // there was an error
+  }
+);
   }
 
   render() {
@@ -42,7 +50,7 @@ class App extends Component {
         <Rank />
         <ImageLinkForm 
           onInputChange={this.onInputChange} 
-          onSubmit={this.onButtonSubmit}
+          onButtonSubmit={this.onButtonSubmit}
         />
         {/* {
         
