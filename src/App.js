@@ -37,6 +37,7 @@ class App extends Component {
 
   calculateFaceLocation = (data) => {
     const calrifaiFace = data.output[0].data.regions[0].region_info.bounding_box
+    const image = document.getElementById('inputimage')
   }
 
   onButtonSubmit = (evnt) => {
