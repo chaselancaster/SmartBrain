@@ -36,7 +36,7 @@ class App extends Component {
   onButtonSubmit = (evnt) => {
     console.log('click')
     app.models.predict(
-      Clarifai.GENERAL_MODEL, 
+      Clarifai.COLOR_MODEL, 
       "https://samples.clarifai.com/metro-north.jpg", 
       {language: 'zh'})
       .then(
