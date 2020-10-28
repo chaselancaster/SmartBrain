@@ -5,7 +5,7 @@ import Navigation from './Component/Navigation/Navigation';
 import Logo from './Component/Logo/Logo';
 import ImageLinkForm from './Component/ImageLinkForm/ImageLinkForm';
 import Rank from './Component/Rank/Rank';
-import FaceRecognition from './FaceRecognition/FaceRecognition';
+import FaceRecognition from './Component/FaceRecognition/FaceRecognition';
 import './App.css';
 
 const app = new Clarifai.App({
