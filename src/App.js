@@ -30,6 +30,7 @@ class App extends Component {
     input: '',
     imageUrl: '',
     box: {},
+    route: 'signin'
   }
 
   onInputChange = (event) => {
