@@ -78,7 +78,7 @@ class App extends Component {
 
   render() {
 
-    { isSignedIn, imageUrl, route, box } = this.state;
+    const { isSignedIn, imageUrl, route, box } = this.state;
 
     return (
       <div className="App">
@@ -105,6 +105,7 @@ class App extends Component {
         }
       </div>
     );
+    
   }
 
 }
