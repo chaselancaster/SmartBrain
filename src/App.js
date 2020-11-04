@@ -41,6 +41,16 @@ class App extends Component {
       joined: ''
     }
   }
+  
+  loadUser = (data) => {
+    this.setState({user: {
+      id: data.id,
+      name: data.name,
+      email: data.email,
+      entries: data.entries,
+      joined: data.joined
+    }})
+  }
 
   onInputChange = (event) => {
     this.setState({input: event.target.value})
