@@ -25,10 +25,9 @@ const particlesOptions = {
     }
   }
 }
-class App extends Component {
 
-  state = {
-    input: '',
+const initialState = {
+  input: '',
     imageUrl: '',
     box: {},
     route: 'signin',
@@ -40,7 +39,10 @@ class App extends Component {
       entries: 0,
       joined: ''
     }
-  }
+}
+class App extends Component {
+
+  state = initialState;
   
   loadUser = (data) => {
     this.setState({user: {
